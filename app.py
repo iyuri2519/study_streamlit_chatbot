@@ -35,17 +35,8 @@ st.text("""
 ⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠇⠄⠄⠄⠄⠄⠈⢀⠠⠴⠒⠉⠄⠄⠄⠠⠤⠄⠄⠄⠄⠄⠄⠄⠰⠃⢈⠋⠄⠄⠄⠄⠄⠄⠈⠁⠣⠄⠄⠧⠄⠄⠄⠄⠄⠄⠄
 """)
 
-# 사용자의 글 출력
-# with st.chat_message("user"):
-#     st.markdown("# 난 코딩이 싫어")
-# 이렇게 고쳤다
-# show_msg(role=ROLE.user, msg="# 난 코딩이 싫어")
-# 안쪽 데이터를 히스토리에 넣고 꺼내는 식으로 만들면
-# show_msg(**st.session_state.history[-1])
-
 init_history()
 
-# 사용자 답변
 user_input = st.chat_input("메시지를 입력해주세요.")
 if user_input:
     # 사용자
